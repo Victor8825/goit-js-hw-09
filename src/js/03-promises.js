@@ -30,7 +30,8 @@ function onClick (event) {
         Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
       });
       delay += step;
-  }
-}
+  };
+    form.reset();
+};
 
 form.addEventListener("submit", onClick );
